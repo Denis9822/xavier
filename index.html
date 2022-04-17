@@ -131,6 +131,10 @@
             background-color: #018AD9;
         }
         
+        .progression-studios-header-full-width #progression-studios-header-width header#masthead-pro .width-container-pro {
+            width: 1300px !important;
+        }
+        
         .btn_chart,
         .btn_buy {
             transition: 0.5s;
@@ -159,7 +163,7 @@
             width: 190px;
             top: 20px;
             position: relative;
-            margin-left: 20%;
+            left: 30px;
             padding-right: 7px;
             border: 1px solid silver;
             border-bottom: 3px solid silver;
@@ -170,8 +174,12 @@
             margin-top: 8px !important;
         }
         
-        header#masthead-pro #logo-pro {
-            margin-left: 14% !important;
+        header#masthead-pro #logo-pro {}
+        
+        @media only screen and (max-width: 1300px) {
+            .progression-studios-header-full-width #progression-studios-header-width header#masthead-pro .width-container-pro {
+                width: 94% !important;
+            }
         }
         
         @media only screen and (max-width: 756px) {
@@ -182,6 +190,7 @@
                 position: relative;
                 margin-left: auto;
                 margin-right: 0;
+                left: initial;
             }
             .coin_btns {
                 justify-content: center;
